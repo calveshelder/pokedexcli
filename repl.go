@@ -66,7 +66,7 @@ func commandExit() error {
 }
 
 func commandHelp() error {
-	fmt.Println("Welcome to the Pokedex!\nUsage:\n")
+	fmt.Println("Welcome to the Pokedex!\nUsage:")
 	for key, elem := range getCommands() {
 		fmt.Printf("%s: %s\n", key, elem.description)
 	}
